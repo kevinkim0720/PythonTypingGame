@@ -31,7 +31,7 @@ def display_text(stdscr, target, current, wpm = 0):
 
 def load_text():
     # context manager - closes after it's done
-    with open("C:/Users/kevki/Documents/Python/TypingGame/text.txt", "r") as f:
+    with open("text.txt", "r") as f:
         lines = f.readlines()
         # .strip() removes the leading or trailing whitespace characters
         return random.choice(lines).strip()
